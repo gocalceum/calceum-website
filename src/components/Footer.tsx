@@ -1,99 +1,25 @@
 
-import { Separator } from "@/components/ui/separator";
-
 const Footer = () => {
-  const footerSections = [
-    {
-      title: "Product",
-      links: [
-        { name: "Features", href: "#" },
-        { name: "Integrations", href: "#" },
-        { name: "Pricing", href: "#" },
-        { name: "Changelog", href: "#" },
-        { name: "API", href: "#" }
-      ]
-    },
-    {
-      title: "Company",
-      links: [
-        { name: "About", href: "#" },
-        { name: "Blog", href: "#" },
-        { name: "Careers", href: "#" },
-        { name: "Press", href: "#" },
-        { name: "Contact", href: "#" }
-      ]
-    },
-    {
-      title: "Resources", 
-      links: [
-        { name: "Documentation", href: "#" },
-        { name: "Help Center", href: "#" },
-        { name: "Community", href: "#" },
-        { name: "Templates", href: "#" },
-        { name: "Webinars", href: "#" }
-      ]
-    },
-    {
-      title: "Legal",
-      links: [
-        { name: "Privacy Policy", href: "#" },
-        { name: "Terms of Service", href: "#" },
-        { name: "Security", href: "#" },
-        { name: "GDPR", href: "#" },
-        { name: "Cookies", href: "#" }
-      ]
-    }
-  ];
-
   return (
     <footer className="bg-gray-50 border-t border-gray-200">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
-        {/* Main Footer Content */}
-        <div className="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-6 gap-8">
-          {/* Logo and Description */}
-          <div className="col-span-2">
-            <div className="flex items-center space-x-2 mb-4">
-              <div className="w-8 h-8 bg-black rounded-md flex items-center justify-center">
-                <span className="text-white font-bold text-sm">A</span>
-              </div>
-              <span className="text-xl font-semibold text-gray-900">attio</span>
-            </div>
-            <p className="text-gray-600 text-sm leading-relaxed max-w-sm">
-              The AI-native CRM that builds, scales and grows your company to the next level.
-            </p>
-          </div>
-
-          {/* Footer Links */}
-          {footerSections.map((section, index) => (
-            <div key={index}>
-              <h3 className="font-semibold text-gray-900 mb-4">
-                {section.title}
-              </h3>
-              <ul className="space-y-3">
-                {section.links.map((link, linkIndex) => (
-                  <li key={linkIndex}>
-                    <a 
-                      href={link.href}
-                      className="text-gray-600 hover:text-gray-900 text-sm transition-colors"
-                    >
-                      {link.name}
-                    </a>
-                  </li>
-                ))}
-              </ul>
-            </div>
-          ))}
-        </div>
-
-        <Separator className="my-12" />
-
-        {/* Bottom Footer */}
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
         <div className="flex flex-col md:flex-row justify-between items-center">
-          <div className="text-sm text-gray-500 mb-4 md:mb-0">
-            © 2024 Attio. All rights reserved.
+          {/* Logo on the left */}
+          <div className="mb-4 md:mb-0">
+            <span className="text-2xl font-semibold text-gray-900">Calceum</span>
           </div>
           
+          {/* Right side with links and social icons */}
           <div className="flex items-center space-x-6">
+            {/* Links */}
+            <a href="#" className="text-gray-600 hover:text-gray-900 text-sm transition-colors">
+              Contact
+            </a>
+            <a href="#" className="text-gray-600 hover:text-gray-900 text-sm transition-colors">
+              Policies
+            </a>
+            
+            {/* Social Icons */}
             <a href="#" className="text-gray-400 hover:text-gray-600 transition-colors">
               <span className="sr-only">Twitter</span>
               <svg className="w-5 h-5" fill="currentColor" viewBox="0 0 20 20">

@@ -2,6 +2,8 @@
 import { Button } from "@/components/ui/button";
 import { Menu, X } from "lucide-react";
 import { useState } from "react";
+import { Link } from "react-router-dom";
+import CalButton from "@/components/CalButton";
 
 const Navigation = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -12,48 +14,35 @@ const Navigation = () => {
         <div className="flex justify-between items-center h-16">
           {/* Logo */}
           <div className="flex items-center">
-            <div className="flex items-center space-x-2">
-              <div className="w-8 h-8 bg-black rounded-md flex items-center justify-center">
-                <span className="text-white font-bold text-sm">A</span>
-              </div>
-              <span className="text-xl font-semibold text-gray-900">attio</span>
-            </div>
+            <Link to="/" className="text-2xl font-semibold text-gray-900 hover:text-gray-700 transition-colors">
+              Calceum
+            </Link>
           </div>
 
           {/* Desktop Navigation */}
           <div className="hidden md:flex items-center space-x-8">
-            <div className="relative group">
-              <button className="text-gray-700 hover:text-gray-900 px-3 py-2 text-sm font-medium flex items-center">
-                Platform
-                <svg className="ml-1 h-4 w-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" />
-                </svg>
-              </button>
-            </div>
-            <div className="relative group">
-              <button className="text-gray-700 hover:text-gray-900 px-3 py-2 text-sm font-medium flex items-center">
-                Resources
-                <svg className="ml-1 h-4 w-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" />
-                </svg>
-              </button>
-            </div>
-            <a href="#" className="text-gray-700 hover:text-gray-900 px-3 py-2 text-sm font-medium">
-              Customers
-            </a>
-            <a href="#" className="text-gray-700 hover:text-gray-900 px-3 py-2 text-sm font-medium">
+            <Link to="/why-calceum" className="text-gray-700 hover:text-gray-900 hover:bg-gray-100 px-3 py-2 rounded-md text-sm font-medium transition-colors">
+              Why Calceum?
+            </Link>
+            <Link to="/businesses" className="text-gray-700 hover:text-gray-900 hover:bg-gray-100 px-3 py-2 rounded-md text-sm font-medium transition-colors">
+              Businesses
+            </Link>
+            <Link to="/accountants" className="text-gray-700 hover:text-gray-900 hover:bg-gray-100 px-3 py-2 rounded-md text-sm font-medium transition-colors">
+              Accountants
+            </Link>
+            <Link to="/pricing" className="text-gray-700 hover:text-gray-900 hover:bg-gray-100 px-3 py-2 rounded-md text-sm font-medium transition-colors">
               Pricing
-            </a>
+            </Link>
           </div>
 
           {/* Desktop CTA Buttons */}
           <div className="hidden md:flex items-center space-x-4">
-            <Button variant="ghost" className="text-gray-700 hover:text-gray-900">
-              Sign in
-            </Button>
-            <Button className="bg-black hover:bg-gray-800 text-white">
-              Start for free
-            </Button>
+            <Link to="/signin">
+              <Button variant="ghost" className="text-gray-700 hover:text-gray-900">
+                Sign in
+              </Button>
+            </Link>
+            <CalButton className="px-3" />
           </div>
 
           {/* Mobile menu button */}
@@ -85,12 +74,12 @@ const Navigation = () => {
                 Pricing
               </a>
               <div className="pt-4 pb-2 space-y-2">
-                <Button variant="ghost" className="w-full justify-start">
-                  Sign in
-                </Button>
-                <Button className="w-full bg-black hover:bg-gray-800 text-white">
-                  Start for free
-                </Button>
+                <Link to="/signin" className="w-full">
+                  <Button variant="ghost" className="w-full justify-start">
+                    Sign in
+                  </Button>
+                </Link>
+                <CalButton fullWidth />
               </div>
             </div>
           </div>

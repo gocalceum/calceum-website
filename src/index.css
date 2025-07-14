@@ -100,4 +100,16 @@
   body {
     @apply bg-background text-foreground;
   }
+  
+  html {
+    /* Always show scrollbar to prevent layout shift */
+    overflow-y: scroll;
+    /* Prevent horizontal scrolling */
+    overflow-x: hidden;
+  }
+  
+  /* Ensure consistent scrollbar width across browsers */
+  body {
+    scrollbar-gutter: stable;
+  }
 }

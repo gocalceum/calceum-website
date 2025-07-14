@@ -1,73 +1,63 @@
-# Welcome to your Lovable project
+# Calceum Landing Page
 
-## Project info
+A modern, responsive landing page for Calceum - the AI-native CRM that builds, scales and grows your company to the next level.
 
-**URL**: https://lovable.dev/projects/6b1b1b84-1638-4efe-a426-ca8f7b994ed0
+## 🚀 Technologies
 
-## How can I edit this code?
+- **Vite** - Next generation frontend tooling
+- **React** - UI library
+- **TypeScript** - Type-safe JavaScript
+- **Tailwind CSS** - Utility-first CSS framework
+- **shadcn/ui** - Re-usable components built with Radix UI and Tailwind CSS
 
-There are several ways of editing your application.
+## 📦 Installation
 
-**Use Lovable**
+Ensure you have Node.js & npm installed - [install with nvm](https://github.com/nvm-sh/nvm#installing-and-updating)
 
-Simply visit the [Lovable Project](https://lovable.dev/projects/6b1b1b84-1638-4efe-a426-ca8f7b994ed0) and start prompting.
+```bash
+# Clone the repository
+git clone https://github.com/yourusername/calceum-landing.git
 
-Changes made via Lovable will be committed automatically to this repo.
+# Navigate to the project directory
+cd calceum-landing
 
-**Use your preferred IDE**
+# Install dependencies
+npm install
 
-If you want to work locally using your own IDE, you can clone this repo and push changes. Pushed changes will also be reflected in Lovable.
-
-The only requirement is having Node.js & npm installed - [install with nvm](https://github.com/nvm-sh/nvm#installing-and-updating)
-
-Follow these steps:
-
-```sh
-# Step 1: Clone the repository using the project's Git URL.
-git clone <YOUR_GIT_URL>
-
-# Step 2: Navigate to the project directory.
-cd <YOUR_PROJECT_NAME>
-
-# Step 3: Install the necessary dependencies.
-npm i
-
-# Step 4: Start the development server with auto-reloading and an instant preview.
+# Start the development server
 npm run dev
 ```
 
-**Edit a file directly in GitHub**
+## 🛠️ Available Scripts
 
-- Navigate to the desired file(s).
-- Click the "Edit" button (pencil icon) at the top right of the file view.
-- Make your changes and commit the changes.
+- `npm run dev` - Start development server
+- `npm run build` - Build for production
+- `npm run preview` - Preview production build
+- `npm run lint` - Run ESLint
 
-**Use GitHub Codespaces**
+## 📁 Project Structure
 
-- Navigate to the main page of your repository.
-- Click on the "Code" button (green button) near the top right.
-- Select the "Codespaces" tab.
-- Click on "New codespace" to launch a new Codespace environment.
-- Edit files directly within the Codespace and commit and push your changes once you're done.
+```
+calceum-landing/
+├── src/
+│   ├── components/     # React components
+│   ├── lib/           # Utility functions
+│   └── main.tsx       # Application entry point
+├── public/            # Static assets
+├── index.html         # HTML entry point
+└── package.json       # Project dependencies
+```
 
-## What technologies are used for this project?
+## 🌐 Deployment
 
-This project is built with:
+Build the project for production:
 
-- Vite
-- TypeScript
-- React
-- shadcn-ui
-- Tailwind CSS
+```bash
+npm run build
+```
 
-## How can I deploy this project?
+The built files will be in the `dist` directory, ready to be deployed to any static hosting service.
 
-Simply open [Lovable](https://lovable.dev/projects/6b1b1b84-1638-4efe-a426-ca8f7b994ed0) and click on Share -> Publish.
+## 📄 License
 
-## Can I connect a custom domain to my Lovable project?
-
-Yes, you can!
-
-To connect a domain, navigate to Project > Settings > Domains and click Connect Domain.
-
-Read more here: [Setting up a custom domain](https://docs.lovable.dev/tips-tricks/custom-domain#step-by-step-guide)
+This project is proprietary and confidential.
