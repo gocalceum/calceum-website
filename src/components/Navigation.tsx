@@ -37,11 +37,11 @@ const Navigation = () => {
 
           {/* Desktop CTA Buttons */}
           <div className="hidden md:flex items-center space-x-4">
-            <Link to="/signin">
+            <a href="https://app.calceum.com/signin">
               <Button variant="ghost" className="text-gray-700 hover:text-gray-900">
                 Sign in
               </Button>
-            </Link>
+            </a>
             <CalButton className="px-3" />
           </div>
 
@@ -74,11 +74,11 @@ const Navigation = () => {
                 Pricing
               </a>
               <div className="pt-4 pb-2 space-y-2">
-                <Link to="/signin" className="w-full">
+                <a href="https://app.calceum.com/signin" className="w-full">
                   <Button variant="ghost" className="w-full justify-start">
                     Sign in
                   </Button>
-                </Link>
+                </a>
                 <CalButton fullWidth />
               </div>
             </div>
