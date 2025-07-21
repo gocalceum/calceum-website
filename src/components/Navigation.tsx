@@ -14,8 +14,12 @@ const Navigation = () => {
         <div className="flex justify-between items-center h-16">
           {/* Logo */}
           <div className="flex items-center">
-            <Link to="/" className="text-2xl font-semibold text-gray-900 hover:text-gray-700 transition-colors">
-              Calceum
+            <Link to="/" className="flex items-center hover:opacity-80 transition-opacity">
+              <img 
+                src="/Calceum LOGO 1F_PNG.png" 
+                alt="Calceum" 
+                className="h-6 w-auto"
+              />
             </Link>
           </div>
 

@@ -2,6 +2,7 @@ import { Button } from "@/components/ui/button";
 import { ArrowLeft } from "lucide-react";
 import { useNavigate } from "react-router-dom";
 import Navigation from "@/components/Navigation";
+import Footer from "@/components/Footer";
 
 const WhyCalceum = () => {
   const navigate = useNavigate();
@@ -52,6 +53,7 @@ const WhyCalceum = () => {
           </div>
         </div>
       </div>
+      <Footer />
     </div>
   );
 };

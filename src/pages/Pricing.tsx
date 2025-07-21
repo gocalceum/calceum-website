@@ -2,6 +2,7 @@ import { Button } from "@/components/ui/button";
 import { ArrowLeft, Check } from "lucide-react";
 import { useNavigate } from "react-router-dom";
 import Navigation from "@/components/Navigation";
+import Footer from "@/components/Footer";
 
 const Pricing = () => {
   const navigate = useNavigate();
@@ -117,6 +118,7 @@ const Pricing = () => {
           </div>
         </div>
       </div>
+      <Footer />
     </div>
   );
 };
